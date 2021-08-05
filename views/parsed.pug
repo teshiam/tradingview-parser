@@ -1,0 +1,13 @@
+html
+    head
+        title=title 
+    body
+        h1=feed.title
+        ul 
+            each object in objects
+                li=object.title 
+                ul 
+                    li=object.content
+                    a(href=object.link) View more...
+            else
+                li There is no feed 
